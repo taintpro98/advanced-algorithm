@@ -1,0 +1,7 @@
+"""
+LeetCode 560 - Subarray Sum Equals K
+https://leetcode.com/problems/subarray-sum-equals-k/
+
+Pattern:
+Prefix Sum with Hash Map
+"""

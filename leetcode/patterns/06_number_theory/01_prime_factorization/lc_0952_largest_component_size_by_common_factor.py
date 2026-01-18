@@ -1,0 +1,7 @@
+"""
+LeetCode 952 - Largest Component Size by Common Factor
+https://leetcode.com/problems/largest-component-size-by-common-factor/
+
+Pattern:
+Union-Find with Prime Factorization
+"""
