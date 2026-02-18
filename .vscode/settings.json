@@ -1,11 +1,13 @@
 {
-  "editor.insertSpaces": false, 
+  "editor.insertSpaces": false,
   "editor.tabSize": 4,
   "[python]": {
     "editor.insertSpaces": false,
     "editor.tabSize": 4
   },
   "editor.detectIndentation": false,
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Args": ["--ignore=W191,E101,E111"],
   "files.associations": {
     "algorithm": "cpp",
     "queue": "cpp",
