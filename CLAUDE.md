@@ -12,6 +12,8 @@
 | 6 | **Template B** — design problems: class with `__init__` + multiple methods |
 | 7 | **Template C** — stub only (docstring, no scaffold), used in `patterns/` |
 | 8 | **notes.md structure** — What / Patterns & Invariants / How to Recognize / Problem links |
+| 9 | **Contest files** — named `q1_<title>.py`, folder per round under `contests/weekly/` or `contests/biweekly/` |
+| 10 | **Probability section** — notes-only markdown, no `.py` files |
 
 ## Git
 
@@ -106,6 +108,23 @@ The docstring URL line changes per platform:
 - Codeforces: `https://codeforces.com/problemset/problem/<contest>/<letter>`
 
 Everything else (templates A / B / C, `pass` bodies, no solutions) stays the same regardless of platform.
+
+## Contest Files (`leetcode/practice/contests/`)
+
+Name by question position, not LeetCode ID (ID may not exist yet during contest):
+
+```
+q1_<snake_case_title>.py
+q2_<snake_case_title>.py
+```
+
+Folder per round: `weekly/contest_<number>/` or `biweekly/contest_<number>/`.
+Same templates (A / B / C) and tab indentation apply.
+
+## Probability Section (`probability/`)
+
+Notes-only — no `.py` stubs. Each subtopic has a `notes.md` with theory, formulas, and problems in markdown.
+Do not create `.py` files here.
 
 ## Notes Files (`notes.md`)
 
