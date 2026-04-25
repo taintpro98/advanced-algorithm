@@ -4,6 +4,8 @@ https://leetcode.com/problems/find-median-from-data-stream/
 
 Pattern:
 Two Heaps (Max Heap + Min Heap)
+
+See: leetcode/patterns/03_heap_greedy/01_k_elements/lc_0295_find_median_from_data_stream.py
 """
 
 

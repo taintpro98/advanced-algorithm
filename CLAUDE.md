@@ -14,6 +14,7 @@
 | 8 | **notes.md structure** — What / Patterns & Invariants / How to Recognize / Problem links |
 | 9 | **Contest files** — named `q1_<title>.py`, folder per round under `contests/weekly/` or `contests/biweekly/` |
 | 10 | **Probability section** — notes-only markdown, no `.py` files |
+| 11 | **worldquant cross-reference** — if a problem exists in `patterns/`, add `See: <path>` in the worldquant stub docstring; solve only in `patterns/` |
 
 ## Git
 
@@ -108,6 +109,26 @@ The docstring URL line changes per platform:
 - Codeforces: `https://codeforces.com/problemset/problem/<contest>/<letter>`
 
 Everything else (templates A / B / C, `pass` bodies, no solutions) stays the same regardless of platform.
+
+## WorldQuant Cross-References
+
+When a worldquant stub has a counterpart in `patterns/`, add a `See:` line inside the docstring after the Pattern value:
+
+```python
+"""
+LeetCode 295 - Find Median from Data Stream
+https://leetcode.com/problems/find-median-from-data-stream/
+
+Pattern:
+Two Heaps (Max Heap + Min Heap)
+
+See: leetcode/patterns/03_heap_greedy/01_k_elements/lc_0295_find_median_from_data_stream.py
+"""
+```
+
+- Solve only in the `patterns/` file — never duplicate the implementation
+- The worldquant stub stays as-is (just `pass`) and serves as a checklist pointer
+- If no counterpart exists in `patterns/`, leave the worldquant stub without a `See:` line
 
 ## Contest Files (`leetcode/practice/contests/`)
 

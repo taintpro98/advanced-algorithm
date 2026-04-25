@@ -4,6 +4,8 @@ https://leetcode.com/problems/network-delay-time/
 
 Pattern:
 Dijkstra's Algorithm
+
+See: leetcode/patterns/05_graph/01_shortest_path/lc_0743_network_delay_time.py
 """
 from typing import List
 

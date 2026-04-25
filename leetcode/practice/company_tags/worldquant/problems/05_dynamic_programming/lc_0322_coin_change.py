@@ -4,6 +4,8 @@ https://leetcode.com/problems/coin-change/
 
 Pattern:
 Unbounded Knapsack DP
+
+See: leetcode/patterns/04_dynamic_programming/02_knapsack_variants/lc_0322_coin_change.py
 """
 from typing import List
 

@@ -4,6 +4,8 @@ https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 Pattern:
 Binary Search on Partition
+
+See: leetcode/patterns/01_core_ds/04_binary_search/lc_0004_median_of_two_sorted_arrays.py
 """
 from typing import List
 

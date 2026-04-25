@@ -4,6 +4,8 @@ https://leetcode.com/problems/range-sum-query-mutable/
 
 Pattern:
 Segment Tree / Fenwick Tree
+
+See: leetcode/patterns/07_advanced/01_segment_tree/lc_0307_range_sum_query_mutable.py
 """
 from typing import List
 

@@ -4,6 +4,8 @@ https://leetcode.com/problems/minimum-window-substring/
 
 Pattern:
 Sliding Window + Hash Table
+
+See: leetcode/patterns/01_core_ds/03_sliding_window/lc_0076_minimum_window_substring.py
 """
 
 

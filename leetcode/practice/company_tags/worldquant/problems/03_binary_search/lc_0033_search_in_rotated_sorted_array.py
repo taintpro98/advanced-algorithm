@@ -4,6 +4,8 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/
 
 Pattern:
 Modified Binary Search
+
+See: leetcode/patterns/01_core_ds/04_binary_search/lc_0033_search_in_rotated_sorted_array.py
 """
 from typing import List
 
