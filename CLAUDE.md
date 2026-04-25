@@ -15,6 +15,8 @@
 | 9 | **Contest files** — named `q1_<title>.py`, folder per round under `contests/weekly/` or `contests/biweekly/` |
 | 10 | **Probability section** — notes-only markdown, no `.py` files |
 | 11 | **worldquant cross-reference** — if a problem exists in `patterns/`, add `See: <path>` in the worldquant stub docstring; solve only in `patterns/` |
+| 12 | **Test cases** — always add example test cases from the problem at the bottom of every `.py` template |
+| 13 | **No unsolicited hints** — during discussion, never suggest solution approaches, insights, or next steps unless explicitly asked |
 
 ## Git
 
@@ -52,8 +54,17 @@ from typing import List, Optional  # only import what the signature needs
 
 
 class Solution:
-    def methodName(self, param: type) -> return_type:
-        pass
+	def methodName(self, param: type) -> return_type:
+		pass
+
+
+sol = Solution()
+
+# Example 1: Output <expected>
+print(sol.methodName(<input>))
+
+# Example 2: Output <expected>
+print(sol.methodName(<input>))
 ```
 
 ### Template B — Design problem (multiple methods)
@@ -69,14 +80,20 @@ Pattern:
 
 class DesignClass:
 
-    def __init__(self, param: type) -> None:
-        pass
+	def __init__(self, param: type) -> None:
+		pass
 
-    def method1(self, param: type) -> return_type:
-        pass
+	def method1(self, param: type) -> return_type:
+		pass
 
-    def method2(self, param: type) -> return_type:
-        pass
+	def method2(self, param: type) -> return_type:
+		pass
+
+
+# Example 1
+obj = DesignClass(<init_args>)
+obj.method1(<args>)
+print(obj.method2(<args>))  # expected output
 ```
 
 ### Template C — Stub only (no API needed yet)
