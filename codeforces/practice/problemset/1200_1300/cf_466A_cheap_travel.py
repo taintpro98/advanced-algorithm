@@ -15,7 +15,15 @@ INF = float('inf')
 
 
 def solve():
-	pass
-
+	n, m, a, b = map(int, input().split())
+	if m * a <= b:
+		print(n*a)
+		return
+	nums_buy = n // m
+	ans = nums_buy * b
+	remain = n - nums_buy * m
+	single_buys = remain * a
+	ans += min(single_buys, b)
+	print(ans)
 
 solve()
