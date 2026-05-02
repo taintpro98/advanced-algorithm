@@ -15,7 +15,13 @@ INF = float('inf')
 
 
 def solve():
-	pass
+	n, k = map(int, input().split())
+	c = k // (n-1)
+	r = k % (n-1)
+	ans = c * n + r
+	if r == 0:
+		ans -= 1
+	print(ans)
 
 
 T = int(input())
