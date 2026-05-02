@@ -1,0 +1,7 @@
+"""
+Codeforces 1520D - Same Differences
+https://codeforces.com/problemset/problem/1520/D
+
+Pattern:
+Hashing, Math
+"""
