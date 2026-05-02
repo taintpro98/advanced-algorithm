@@ -16,7 +16,7 @@
 | 10 | **Probability section** — notes-only markdown, no `.py` files |
 | 11 | **worldquant cross-reference** — if a problem exists in `patterns/`, add `See: <path>` in the worldquant stub docstring; solve only in `patterns/` |
 | 12 | **Test cases** — always add example test cases from the problem at the bottom of every `.py` template |
-| 13 | **No hints ever** — never suggest solution approaches, algorithmic insights, data structures, optimizations, or next steps unless the user explicitly asks for a hint |
+| 13 | **No unsolicited hints** — never suggest solution approaches, algorithmic insights, optimizations, or review a solution unless the user explicitly asks or commands |
 
 ## Git
 
