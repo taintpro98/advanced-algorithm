@@ -110,6 +110,38 @@ Pattern:
 """
 ```
 
+### Template D — Codeforces problem
+
+Used for all files under `codeforces/`.
+
+```python
+"""
+Codeforces <ID> - <Title>
+https://codeforces.com/problemset/problem/<contest>/<letter>
+
+Pattern:
+<Tags>
+"""
+import sys
+from math import gcd
+from collections import defaultdict, deque
+
+input = sys.stdin.readline
+MOD = 10**9 + 7
+INF = float('inf')
+
+
+def solve():
+	pass
+
+
+T = int(input())
+for _ in range(T):
+	solve()
+```
+
+For single-test-case problems, replace the bottom two lines with just `solve()`.
+
 ## File Naming Convention
 
 Prefix depends on the platform:
