@@ -1,16 +1,21 @@
 """
 LeetCode 802 - Find Eventual Safe States
 https://leetcode.com/problems/find-eventual-safe-states/
-
-Pattern:
-DFS / Cycle Detection
 """
 from typing import List
 
 
 class Solution:
 	def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
-		pass
+		terminals = set()
+		for v, l in enumerate(graph): # ":each l is an array
+			if len(l) == 0:
+				terminals.add(v)
+		ans = []
+		for v in range(len(graph)):
+			print("fuck")
+		return ans
+
 
 
 sol = Solution()
