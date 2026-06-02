@@ -7,16 +7,24 @@ from typing import List
 
 class Solution:
 	def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
-		terminals = set()
-		for v, l in enumerate(graph): # ":each l is an array
-			if len(l) == 0:
-				terminals.add(v)
+		N = len(graph)
+		state = [0] * N
+		def dfs(node: int) -> bool:
+			if state[node] == 1:
+				return False
+			if state[node] == 2: 
+				return True
+			state[node] = 1
+			for v in graph[node]:
+				if not dfs(v):
+					return False
+			state[node] = 2
+			return True
 		ans = []
-		for v in range(len(graph)):
-			print("fuck")
+		for v in range(N):
+			if dfs(v):
+				ans.append(v)
 		return ans
-
-
 
 sol = Solution()
 
