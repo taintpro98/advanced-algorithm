@@ -142,6 +142,33 @@ for _ in range(T):
 
 For single-test-case problems, replace the bottom two lines with just `solve()`.
 
+### Template E — Project Euler problem
+
+Used for all files under `project_euler/`, which is a **flat folder** — one file per problem,
+no subfolders, and only for problems that actually warrant code. Problems state a small worked
+example and then a larger target value — parameterize the function so both can be run.
+
+```python
+"""
+Project Euler <ID> - <Title>
+https://projecteuler.net/problem=<ID>
+
+Pattern:
+<Topic / technique tags>
+"""
+
+
+def <function_name>(<param>: type) -> return_type:
+	pass
+
+
+# Example: <small case from the statement> -> <expected>
+print(<function_name>(<small_input>))
+
+# Answer
+print(<function_name>(<real_input>))
+```
+
 ## File Naming Convention
 
 Prefix depends on the platform:
@@ -150,12 +177,14 @@ Prefix depends on the platform:
 |---|---|---|
 | LeetCode | `lc_` | `lc_0146_lru_cache.py` |
 | Codeforces | `cf_` | `cf_1234A_two_rounds.py` |
+| Project Euler | `pe_` | `pe_0007_10001st_prime.py` |
 
-Always zero-pad the ID to at least 4 digits for LeetCode. Codeforces IDs use the contest+letter format as-is (e.g. `1234A`).
+Always zero-pad the ID to at least 4 digits for LeetCode and Project Euler. Codeforces IDs use the contest+letter format as-is (e.g. `1234A`).
 
 The docstring URL line changes per platform:
 - LeetCode: `https://leetcode.com/problems/<slug>/`
 - Codeforces: `https://codeforces.com/problemset/problem/<contest>/<letter>`
+- Project Euler: `https://projecteuler.net/problem=<id>`
 
 Everything else (templates A / B / C, `pass` bodies, no solutions) stays the same regardless of platform.
 
