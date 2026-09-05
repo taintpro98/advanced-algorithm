@@ -8,7 +8,11 @@ Set Deduplication, Exponent Arithmetic
 
 
 def distinct_powers(a_max: int, b_max: int) -> int:
-	pass
+	ans = set()
+	for a in range(2, a_max+1):
+		for b in range(2, b_max+1):
+			ans.add(a**b)
+	return len(ans)
 
 
 # Example: a_max = 5, b_max = 5 -> 15
