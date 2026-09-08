@@ -17,6 +17,7 @@
 | 11 | **worldquant cross-reference** — if a problem exists in `patterns/`, add `See: <path>` in the worldquant stub docstring; solve only in `patterns/` |
 | 12 | **Test cases** — always add example test cases from the problem at the bottom of every `.py` template |
 | 13 | **No unsolicited hints** — never suggest solution approaches, algorithmic insights, optimizations, or review a solution unless the user explicitly asks or commands |
+| 14 | **No `Pattern:` line** — docstrings carry title, URL and statement only; naming the technique is the user's job |
 
 ## Git
 
@@ -46,9 +47,6 @@ Read existing files and follow these templates exactly.
 """
 LeetCode <ID> - <Title>
 https://leetcode.com/problems/<slug>/
-
-Pattern:
-<Pattern Name>
 """
 from typing import List, Optional  # only import what the signature needs
 
@@ -73,9 +71,6 @@ print(sol.methodName(<input>))
 """
 LeetCode <ID> - <Title>
 https://leetcode.com/problems/<slug>/
-
-Pattern:
-<Pattern Name>
 """
 
 class DesignClass:
@@ -104,9 +99,6 @@ Used in `patterns/` when only tracking the problem, not scaffolding it yet:
 """
 LeetCode <ID> - <Title>
 https://leetcode.com/problems/<slug>/
-
-Pattern:
-<Pattern Name>
 """
 ```
 
@@ -118,9 +110,6 @@ Used for all files under `codeforces/`.
 """
 Codeforces <ID> - <Title>
 https://codeforces.com/problemset/problem/<contest>/<letter>
-
-Pattern:
-<Tags>
 """
 import sys
 from math import gcd
@@ -152,9 +141,6 @@ example and then a larger target value — parameterize the function so both can
 """
 Project Euler <ID> - <Title>
 https://projecteuler.net/problem=<ID>
-
-Pattern:
-<Topic / technique tags>
 """
 
 
@@ -190,15 +176,12 @@ Everything else (templates A / B / C, `pass` bodies, no solutions) stays the sam
 
 ## WorldQuant Cross-References
 
-When a worldquant stub has a counterpart in `patterns/`, add a `See:` line inside the docstring after the Pattern value:
+When a worldquant stub has a counterpart in `patterns/`, add a `See:` line inside the docstring after the URL:
 
 ```python
 """
 LeetCode 295 - Find Median from Data Stream
 https://leetcode.com/problems/find-median-from-data-stream/
-
-Pattern:
-Two Heaps (Max Heap + Min Heap)
 
 See: leetcode/patterns/03_heap_greedy/01_k_elements/lc_0295_find_median_from_data_stream.py
 """
